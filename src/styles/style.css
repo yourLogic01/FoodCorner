@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Yanone+Kaffeesatz&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.navbar{
+  font-family: 'Exo 2', sans-serif;
+}
+
+.navbar-logo img {
+  width: 55px;
+  height: 40px;
+}
+.navbar-logo h2 {
+  color: white;
+}
+.navbar-logo{
+  margin: 0 auto;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  margin: 32px auto;
+}
+
+.headerContainer{
+  text-align: center;
+}
+
+.headerContainer img{
+  width: 400px;
+  margin: 12px 0px 12px 0px;
+}
+
+.headerContainer h1{
+  font-family: 'Exo 2', sans-serif;
+}
+.headerContainer p{
+  font-size: 24px;
+}
+#content {
+  padding-bottom: 10rem;
+  background-color: #8FE3CF;
+}
+#foodList {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 16px;
+}
+
+.food {
+  display: inline-block;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 31%;
+  max-height: 35rem;
+}
+
+.foodInfo {
+  padding: 15px;
+  background-color: white;
+}
+
+.foodInfo > h3 {
+  font-weight: bold;
+  padding-top: 15px;
+}
+.foodInfo > h5 {
+  padding: 0px;
+}
+.foodInfo > p {
+  font-weight: bold;
+}
+
+.foodInfo > a {
+  text-decoration: none;
+}
+
+.rejectMessage{
+  text-align: center;
+}
+.thumb{
+  max-width: 190px;
+  border-radius: 5px;
+}
+.buttonUp{
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+}
+.buttonUp:active{
+  transition: 1s;
+}
+#footer {
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  color: white;
+}
+
+
+@media screen and (max-width: 800px) {
+  .food {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+  }
+  .thumb{
+    max-width: 300px;
+  }
+  .headerContainer img{
+    width: 200px;
+    height: 150px;
+  }
+
+  .headerContainer p{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .thumb{
+    max-width: 200px;
+  }
+}
